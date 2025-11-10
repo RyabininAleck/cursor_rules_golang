@@ -1,0 +1,15 @@
+description: "Context"
+globs:
+  - "**/*.go"
+alwaysApply: true
+---
+- Always pass `context.Context` as the first parameter to all functions that perform I/O operations (DB, HTTP, external APIs, files).
+- Use `context.Context` for canceling operations, timeouts, and passing request values (trace ID, user ID).
+- Always check `ctx.Done()` in long-running operations and loops: `select { case <-ctx.Done(): return ctx.Err() }`.
+- Use `context.WithTimeout` or `context.WithDeadline` for DB and external service operations.
+- Don't pass `nil` instead of context - use `context.Background()` or `context.TODO()`.
+- Don't store context in structs - pass it as a parameter.
+- Use named types for context keys: `type contextKey string` and `const userIDKey contextKey = "userID"`.
+- Always propagate context through all layers: handler -> service -> repository.
+- For HTTP handlers, use `r.Context()` from `*http.Request` or `c.Request.Context()` from `*gin.Context`.
+- When creating goroutines, pass context through closure, not through global variables.

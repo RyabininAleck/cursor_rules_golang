@@ -1,0 +1,17 @@
+description: "Architecture"
+globs:
+  - "**/*.go"
+alwaysApply: true
+---
+- Follow Clean Architecture: separate code into layers (handlers/controllers, services, repositories).
+- Use dependency injection through constructors, not through global variables.
+- Isolate business logic from frameworks (Gin, HTTP) - use interfaces.
+- Store data models in the `internal/models` package.
+- Place HTTP handlers in `internal/api` in files `handlers.go`, `router.go`, `<domain>_handlers.go`.
+- Place business logic in `internal/service`.
+- Place data access in `internal/repository`.
+- Use `internal/` for code that should not be imported from outside.
+- Place application entry points in `cmd/`.
+- Store configuration in `internal/config`.
+- Avoid circular dependencies between packages.
+- Use interfaces to abstract dependencies between layers.

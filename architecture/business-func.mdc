@@ -1,0 +1,12 @@
+description: "Business Logic"
+globs:
+  - "**/*.go"
+alwaysApply: true
+---
+- All business logic must be extracted into pure functions without side effects.
+- Pure functions should accept input data through parameters and return results without modifying external state.
+- Always create unit tests for each pure function covering various input scenarios.
+- Pure functions should be stored in the service layer, next to where they are used.
+- Use interfaces and dependency injection to isolate business logic dependencies.
+- Write a single-line comment for each function.
+- Comment format: //FuncName - function purpose.

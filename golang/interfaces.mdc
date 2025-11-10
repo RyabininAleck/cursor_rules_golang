@@ -1,0 +1,12 @@
+description: "Interfaces"
+globs:
+  - "**/*.go"
+alwaysApply: true
+---
+- Accept interfaces, return structs.
+- Small interfaces - one method or a few related ones.
+- Define interfaces at the point of use, not at the point of implementation.
+- Don't create interfaces in advance - only when needed (YAGNI).
+- Name with the `-er` suffix: `Reader`, `Writer`, `Handler`.
+- Use to abstract external dependencies (DB, HTTP, queues).
+- In tests - mock interfaces, not real implementations.

@@ -1,0 +1,15 @@
+description: "Naming"
+globs:
+  - "**/*.go"
+alwaysApply: true
+---
+- Use short names for local variables, long names for exported functions.
+- Name interfaces with the `-er` suffix when appropriate: `Reader`, `Writer`, `Handler`.
+- Use `camelCase` for unexported names, `PascalCase` for exported names.
+- Name constants in `PascalCase` depending on context.
+- Use single-letter names only for indices: `i`, `j`, `k`, for reader - `r`, for writer - `w`.
+- Avoid abbreviations unless they are commonly accepted (HTTP, URL, ID, DB).
+- Name boolean variables as questions: `isValid`, `hasError`, `canProcess`.
+- Use verbs for functions: `GetUser`, `CreateOrder`, `ValidateInput`.
+- Use nouns for types: `User`, `Order`, `Config`.
+- Name tests as `TestFunctionName_Scenario`: `TestProcessTransaction_InvalidAmount`.

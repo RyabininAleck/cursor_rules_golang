@@ -1,0 +1,15 @@
+description: "Error Handling"
+globs:
+  - "**/*.go"
+alwaysApply: true
+---
+- Always check errors immediately after calling a function: `if err != nil { ... }`.
+- Handle errors as locally as possible.
+- Return wrapped errors upward: `return fmt.Errorf("description: %w", err)`.
+- Use the `fmt` package to wrap errors to preserve the call stack (`%w`).
+- Don't ignore errors (don't leave empty if err != nil {} or `_ = err`).
+- Use `errors.Is` and `errors.As` to check error type when necessary.
+- Don't call `panic` when handling errors in normal flow, except for truly critical cases.
+- For logging errors, use structured logs, passing the error as a field, not converting it to a string.
+- Simplify code using built-in idioms: if err := doSomething(); err != nil { return err }
+

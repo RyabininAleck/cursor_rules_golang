@@ -1,0 +1,15 @@
+description: "Go Proverbs"
+globs:
+  - "**/*.go"
+alwaysApply: true
+---
+- Follow Go Proverbs: https://go-proverbs.github.io/
+- Make the zero value useful ("Make the zero value useful").
+- Keep interfaces small and few ("The bigger the interface, the weaker the abstraction").
+- Prefer copying over excessive dependencies ("A little copying is better than a little dependency").
+- Avoid implicit magic in code ("Clear is better than clever").
+- Use named parameters only if it improves readability.
+- Use channels to organize data flow, not for general synchronization ("Don't communicate by sharing memory, share memory by communicating").
+- Always mark generated files with a special comment: `// Code generated ... DO NOT EDIT.` (https://golang.org/s/generatedcode)
+- Write tests that verify interface behavior.
+- Maintain KISS and DRY, but don't overcomplicate architecture unnecessarily.

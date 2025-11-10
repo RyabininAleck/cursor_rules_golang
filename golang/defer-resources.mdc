@@ -1,0 +1,12 @@
+description: "Defer and Resources"
+globs:
+  - "**/*.go"
+alwaysApply: true
+---
+- ALWAYS use `defer` immediately after opening a resource: `defer file.Close()`, `defer rows.Close()`, `defer tx.Rollback()`, `defer cancel()`.
+- For mutexes: `defer mu.Unlock()` immediately after `mu.Lock()`.
+- For transactions: `defer func() { if err != nil { tx.Rollback() } }()` or check `sql.ErrTxDone`.
+- Close channels: `defer close(ch)`.
+- Stop tickers: `defer ticker.Stop()`.
+- Close HTTP bodies: `defer resp.Body.Close()`.
+- Don't use defer in loops - close resources explicitly in each iteration.

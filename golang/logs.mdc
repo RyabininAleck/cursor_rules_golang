@@ -1,0 +1,18 @@
+description: "Logging"
+globs:
+  - "**/*.go"
+alwaysApply: true
+---
+- Use the zap structured logging library. logger.Error("An error occurred",
+                                                           			zap.Error(wrappedErr),
+                                                           			zap.String("operation", "doSomething"),
+                                                           		)
+- Always create a logger once and pass it to functions for logging.
+- Logs should be structured: key-value pairs, not plain strings.
+- Use `context.Context` to pass the logger if needed.
+- Log format: `logger.Info("action", "key1", value1, "key2", value2)`.
+- NEVER use `fmt.Println`, `log.Print`, `log.Printf`, `log.Println` for logging - replace with zap.
+- When refactoring existing code, replace all `log.Printf` with structured zap logging.
+- Log errors through `logger.Error` with full context and tracing if supported.
+- Use appropriate log levels: `Debug` for debug information, `Info` for informational messages, `Warn` for warnings, `Error` for errors.
+- Include operation context in logs: user ID, request ID, transaction ID, operation name.

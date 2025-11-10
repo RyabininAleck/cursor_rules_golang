@@ -1,0 +1,13 @@
+description: "Graceful shutdown"
+globs:
+  - "**/*.go"
+alwaysApply: true
+---
+- ALWAYS implement graceful shutdown for HTTP servers and long-running processes.
+- Use `context.WithCancel` to manage goroutines.
+- Handle signals: `signal.Notify(sig, syscall.SIGINT, syscall.SIGTERM)`.
+- Use `http.Server.Shutdown(ctx)` with a 30-second timeout.
+- Use `sync.WaitGroup` to wait for goroutines to complete.
+- Stop all clients (RabbitMQ, Redis, DB) before exit.
+- NEVER use `os.Exit` or `log.Fatal` in shutdown - only graceful termination.
+- Check `http.ErrServerClosed` on `ListenAndServe` - this is normal.

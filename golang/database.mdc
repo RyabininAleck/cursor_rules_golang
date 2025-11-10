@@ -1,0 +1,15 @@
+description: "Database"
+globs:
+  - "**/*.go"
+alwaysApply: true
+---
+- NEVER use string concatenation to insert parameter values in SQL queries; always use parameterized queries (? or $1, $2).
+- Concatenation of parts of the SQL query that are additional components of the query (for example, additional conditions, table names) is allowed.
+- ALWAYS use `QueryContext`, `ExecContext`, `BeginTx` with context.
+- ALWAYS use `defer rows.Close()` and `defer tx.Rollback()`.
+- Check `rows.Err()` after `rows.Next()`.
+- Use `BeginTx(ctx, &sql.TxOptions{Isolation: sql.LevelReadCommitted})` for explicit isolation.
+- Handle rollback error: `if err := tx.Rollback(); err != nil && !errors.Is(err, sql.ErrTxDone) { ... }`.
+- Use timeouts: `ctx, cancel := context.WithTimeout(ctx, 5*time.Second); defer cancel()`.
+- Use `sql.NullString`, `sql.NullInt64` for nullable fields instead of pointers.
+- Configure connection pooling: `SetMaxOpenConns`, `SetMaxIdleConns`, `SetConnMaxLifetime`.

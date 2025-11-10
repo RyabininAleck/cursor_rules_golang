@@ -1,0 +1,16 @@
+description: "Testing"
+globs:
+  - "**/*_test.go"
+alwaysApply: true
+---
+- ALWAYS write tests for all public functions.
+- Use table-driven tests: `tests := []struct{ name string; input X; want Y }`.
+- Run in parallel: `t.Parallel()`.
+- Use `t.Helper()` for helper functions.
+- Use `t.Run` to group tests.
+- Name descriptively: `TestFunctionName_Scenario_ExpectedResult`.
+- Use mocks for external dependencies (DB, HTTP, queues).
+- Test edge cases: nil, empty values, negative numbers, large values.
+- Use `testify/assert` or `testify/require`.
+- Each test is independent - no order dependency.
+- Integration tests in `_integration_test.go`.
