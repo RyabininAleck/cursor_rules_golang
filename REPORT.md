@@ -190,56 +190,56 @@ Cursor формирует итоговый промпт из системног�
 ### Видео
 
 1. **[My Ultimate AI Coding Workflow (GitHub + Cursor Agents Setup) — GritAI Studio](https://www.youtube.com/watch?v=AggITrydtwk)**  
-   Описание: GitHub MCP с Cursor Agents: идеи в Issues, параллельные агенты, PR review.
+    GitHub MCP с Cursor Agents: идеи в Issues, параллельные агенты, PR review.
 
 2. **[How I reduced 90% errors for my Cursor (Part 2) — AI Jason](https://www.youtube.com/watch?v=dF4uCZAY1tk)**  
-   Описание: TDD и Memory Bank для минимизации ошибок в AI-кодировании.
+    TDD и Memory Bank для минимизации ошибок в AI-кодировании.
 
 3. **[L-12 | Code Review and Rules with Cursor AI — CTO Bhaiya](https://www.youtube.com/watch?v=ed0ymMUvbQk)**  
-   Описание: Автоматизированный code review и создание custom .cursor/rules для команды.
+    Автоматизированный code review и создание custom .cursor/rules для команды.
 
 4. **[Cursor AI workflow that will 10x your coding productivity — ZeroToProduct](https://www.youtube.com/watch?v=fOBWYsWJ_gk)**  
-   Описание: Workflow для командной разработки: документация, APIs, БД, отладка.
+    Workflow для командной разработки: документация, APIs, БД, отладка.
 
 5. **[Master Cursor AI IDE in 30 minutes: A Beginner's Guide to Advanced Development Workflows](https://www.youtube.com/watch?v=oFqBfWpWpfg)**  
-   Описание: Быстрый гайд по продвинутым техникам Cursor и режиму Agent.
+    Быстрый гайд по продвинутым техникам Cursor и режиму Agent.
 
 ---
 
 ### Статьи и гайды
 
 6. **[We Switched Our 5-Person Team to Cursor 2.0: ROI Report & Config Files — Skywork AI](https://skywork.ai/blog/agent/we-switched-our-5-person-team-to-cursor-2-0-roi-report-config-files/)**  
-   Описание: Отчёт о миграции на Cursor: метрики, ROI 1233%, конфигурации.
+    Отчёт о миграции на Cursor: метрики, ROI 1233%, конфигурации.
 
 7. **[Cursor 1.7 Collaboration Best Practices 2025: Slack, GitHub & Team Rules — Skywork AI](https://skywork.ai/blog/cursor-1-7-collaboration-best-practices-slack-github-team-rules/)**  
-   Описание: Настройка Cursor для команды: Slack+GitHub, Team Rules, YAML конфиги.
+    Настройка Cursor для команды: Slack+GitHub, Team Rules, YAML конфиги.
 
 8. **[Streamline Your Development Workflow with Cursor Slash Commands — Ezra Blocki](https://ezablocki.com/posts/cursor-slash-commands/)**  
-   Описание: Slash Commands: кодирование процессов в .cursor/commands/ как Markdown.
+    Slash Commands: кодирование процессов в .cursor/commands/ как Markdown.
 
 9. **[Ultimate Cursor AI IDE Guide: Team Collaboration & Best Practices — Geeks Kai](https://geekskai.com/blog/ai/cursor-ide-tutorial-ai-powered-development-best-practices/)**  
-   Описание: Комплексный гайд по Cursor для команд: features, MCP, best practices.
+    Комплексный гайд по Cursor для команд: features, MCP, best practices.
 
 10. **[Manage Repos & Large Codebases in Cursor — Instructa.ai (Kevin Kern)](https://www.instructa.ai/blog/cursor-ai/how-to-multiple-repository-and-large-codebase-in-cursor)**  
-    Описание: Работа с большими кодобазами: multi-root workspaces, Git worktrees.
+     Работа с большими кодобазами: multi-root workspaces, Git worktrees.
 
 11. **[AI-Enhanced Code Review | Developer Toolkit — Developer Toolkit AI](https://developertoolkit.ai/en/cursor-ide/lessons/code-review/)**  
-    Описание: Code review с Cursor: стайл-гайды, GitHub MCP, Linear/Jira интеграция.
+     Code review с Cursor: стайл-гайды, GitHub MCP, Linear/Jira интеграция.
 
 12. **[How to Reduce Errors in Cursor and Other AI Coding IDEs by 90% — Honest AI Engine](https://honestaiengine.com/how-to-reduce-errors-in-cursor-and-other-ai-coding-ides-by-90)**  
-    Описание: Структурированное управление задачами для минимизации ошибок AI-кодирования.
+     Структурированное управление задачами для минимизации ошибок AI-кодирования.
 
 13. **[Automatic Pull Request Reviewing with Cursor's Bugbot — Made with Love](https://madewithlove.com/blog/automatic-pull-request-reviewing-with-cursors-bugbot/)**  
-    Описание: Bugbot: автоматизированный code reviewer от Cursor, $40/месяц.
+     Bugbot: автоматизированный code reviewer от Cursor, $40/месяц.
 
 14. **[Understanding Cursor Rules — Cursor 101](https://cursor101.com/cursor/rules)**  
-    Описание: Синтаксис Cursor Rules: MDC формат, нумерация файлов, динамическая загрузка.
+     Синтаксис Cursor Rules: MDC формат, нумерация файлов, динамическая загрузка.
 
 15. **[Git Integration in Cursor | Cursor.fan](https://cursor.fan/tutorial/HowTo/git-integration-in-cursor/)**  
-    Описание: Git в Cursor: commit management, AI-генерация сообщений, @Git для diffs.
+     Git в Cursor: commit management, AI-генерация сообщений, @Git для diffs.
 
 16. **[Cursor Pro – Master AI‑Powered Development](https://www.cursorpro.ai)**  
-    Описание: Платная платформа с видеоуроками по Cursor для команд.
+     Платная платформа с видеоуроками по Cursor для команд.
 
 ---
 
